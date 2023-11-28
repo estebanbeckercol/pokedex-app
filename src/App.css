@@ -1,0 +1,91 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2em ;
+    justify-content: center;
+    text-align: center;
+    
+}
+.img {
+    width:300px;
+}
+
+select{
+    margin-bottom:15px;
+    width: auto;
+    height: 25px;
+}
+.pokebola__heder{
+    background-image: url(../Pokebola-pokeball-png-0.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    right: 200px;
+    z-index: 1000;
+    position: fixed;
+    right:2rem ;
+    top: 4rem;
+}
+@media (max-width:700px) {
+    .pokebola__heder{
+        display: none;
+    }
+   
+    .app{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2em ;
+    justify-content: center;  
+    }
+    .container__card {
+        top: 15rem;
+        width: 100%;
+        width: 350px;
+        flex-wrap: wrap;
+       
+    }
+    
+ }
+.nombre__trainer{
+    color: red;
+    font-weight: bold;
+
+ }
+.header{
+    width: 100%;
+    text-align:center;
+    height: 8rem;
+    font-size:30px;
+    background-color: black;
+    color: white;
+    z-index: 999;
+    position: fixed;
+    
+}
+.parrafo__app{
+    margin-top: 1rem;
+}
+.container__selection {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+    top: 8rem;
+}
+.selection {
+    padding: 10px;
+    margin: 10px;
+    width: 7.3rem;
+    height: 2.1rem;
+    overflow: scroll;
+    background-color: white;
+    position: relative;
+    z-index: 999;
+    background-color: aliceblue;
+    max-height: 200px;
+
+}

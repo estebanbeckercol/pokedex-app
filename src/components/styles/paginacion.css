@@ -1,0 +1,207 @@
+.paginacion__principal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 20, 20);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card__paginacion{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 3rem;
+    background-color: black;
+   
+}
+.img__pokemon{
+    width: 30em;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.name__pokemon{
+    font-size: 2em;
+    text-align: center;
+}
+.img__principal--paginacion{
+    width: 20em;
+    height: 18em;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    top:2.5rem;
+    left: 4rem;
+
+}
+.header__rojo{
+    width: 100%;
+    height: 5rem;
+    background-color: red;
+    position: relative;
+    margin-top:0;
+}
+.header__negro{
+    width: 100%;
+    height: 3rem;
+    background-color:black;
+    position: relative;
+}
+.pokebola__pri{
+    width: 100px;
+    height: 100px;
+
+}
+.img__poke{
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    position:absolute;
+    top:3rem;
+    right: 3em;
+}
+.id__pokemon{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.span_num{
+    font-size: 2rem;
+    color: red;
+}
+.num__pokemon{
+   font-size: 3rem;
+   color: red;
+}
+.talla__poke{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:1em;
+}
+.peso__poke{
+    font-size:16px;
+    text-align:center;
+    color: orangered;
+}
+.altura__poke{
+    font-size:16px;
+    text-align:center;
+    color: orangered;
+}
+.type__pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    width: 10em;
+    height: auto;
+    border-radius: 4px;
+    background-color: chartreuse;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+.type__poke{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+   
+   
+}
+.habilidades{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 5px;
+    margin-top: 2em;
+}
+
+.abilities__pokemon{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+}
+.abilities__poke{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    width: 10em;
+    height: auto;
+    border-radius: 4px;
+    background-color: rgb(229, 255, 0);
+    color: black;
+    justify-content: center;
+    text-align: center;
+
+}
+@media (max-width:700px){
+    .card__paginacion{
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 20px;
+        width: 350px;
+        height: auto;
+        border: 2px solid red;
+        border-radius: 3rem;
+        background-color: black;
+       
+    }
+
+    .paginacion__principal{
+        width: 100vw;
+        height: 100%;
+        background-color: rgb(23, 20, 20);
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img__principal--paginacion{
+        width: 13em;
+        height: 13em;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        position: absolute;
+        top:2.5rem;
+        left: 4rem;
+    
+    }
+    .img__pokemon{
+        width: 15em;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .pokebola__pri{
+        width: 100px;
+        height: 100px;
+    
+    }
+    .img__poke{
+        background-size: cover;
+        width: 110px;
+        height: 110px;
+        position:absolute;
+        top:5rem;
+        right: 3em;
+    }
+}  
