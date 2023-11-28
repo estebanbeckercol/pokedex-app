@@ -27,7 +27,7 @@ const PokeInfoPage = () => {
       <div className='header__negro'></div>
       <div className='pokebola__pri'> <img className='img__poke' src="../../Pokebola-pokeball-png-0.png" alt="" /></div>
        <div className='img__principal--paginacion'>
-        <img src="../../public/image 11.png" alt="" />
+        <img src="../../image 11.png" alt="" />
 
        
     </div>
