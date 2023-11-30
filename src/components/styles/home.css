@@ -74,6 +74,7 @@
      height: 60px;
  }
  .img__pokebola{
+    display: none;
      background-size: cover;
      width: 100px;
      height: 100px;
@@ -83,6 +84,7 @@
      z-index: 99999;
  }
  .img__pikachu{
+    display: none;
      background-size: cover;
      width:25em ;
      height:25em ;
