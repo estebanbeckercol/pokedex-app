@@ -6,6 +6,7 @@ import PokeInfoPage from './PokeInfoPage'
 import SelectType from '../components/PokedexPage/SelecType'
 import '../components/styles/pokebolas.css'
 
+
 const PokedexPage = () => {
 
   const [inputValue, setInputValue] = useState('')

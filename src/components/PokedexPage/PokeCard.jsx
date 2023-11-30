@@ -19,8 +19,8 @@ const PokeCard = ({ url }) => {
   }
 
   return (
-    
-    <article className='container__card' onClick={handleNavigate}>
+   
+<article className='container__card' onClick={handleNavigate}>
         <div className='card'>
         <header>
             <img className='img' src={infoPoke?.sprites.other["official-artwork"].front_default} alt="" />
@@ -28,10 +28,10 @@ const PokeCard = ({ url }) => {
         <section>
             <h3 className='card__name'>{infoPoke?.name}</h3>
            <div className='card__info'>
-           <ul>
+           <ul className='card__type'>
                 {
                     infoPoke?.types.map(infoType => (
-                        <li className='card__tipo' key={infoType.type.url}>{infoType.type.name}/</li>
+                        <li className='card__tipo' key={infoType.type.url}>{infoType.type.name}</li>
                     ))
                 }
             </ul>
@@ -39,7 +39,7 @@ const PokeCard = ({ url }) => {
             <ul className='poderes_card'>
                 {
                     infoPoke?.stats.map(infoStat => (
-                        <li key={infoStat.stat.url}>
+                        <li className='card__stat' key={infoStat.stat.url}>
                             <span>{infoStat.stat.name}</span>
                             <span>{infoStat.base_stat}</span>
                         </li>
@@ -50,7 +50,10 @@ const PokeCard = ({ url }) => {
         </section>
         </div>
        
-    </article>
+</article>
+    
+    
+    
   )
 }
 

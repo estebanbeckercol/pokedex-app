@@ -1,3 +1,4 @@
+
 .container__card {
     top: 15rem;
     display: inline-block;
@@ -33,6 +34,22 @@
     margin-top: 20px;
     color:#73f3cf;
   }
+  .card__type{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
+    color:#0a0a0a;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: chartreuse;
+  }
   .card__info{
     margin-top: 20px;
     font-size: 14px;
@@ -61,4 +78,16 @@
     gap: 10px;
     color:aqua;
     margin-top: 1em;
+  }
+  .card__stat{
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
   }

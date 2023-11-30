@@ -1,6 +1,6 @@
 .container__principal{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: aliceblue;
     margin: 0;
     padding: 0;
@@ -56,8 +56,8 @@
  .footer__rojo{
      width: 100%;
      height: 5rem;
-     background-color: red;
-     position: absolute;
+     background-color: rgb(251, 2, 2);
+     position:static;
      margin-top:10.3rem;
  }
  .footer__negro{
@@ -75,9 +75,10 @@
      background-size: cover;
      width: 100px;
      height: 100px;
-     position: fixed;
+     position:absolute;
      top:700px;
      left:600px;
+     z-index: 99999;
  }
  .img__pikachu{
      background-size: cover;
@@ -87,19 +88,20 @@
      top:200px;
      left:50px;
  }
- @media (max-width:700px){
+ @media (max-width:1200px){
  
      .container__principal{
          width: 100%;
-         height: 100vh;
+         height: 100%;
+        
      }
      .img__pikachu{
-         background-size: cover;
+        display:none;
          width:10em ;
          height:10em ;
-         position: absolute;
-         top:580px;
-         left:50px;
+         position: relative;
+         top:-12rem;
+         left:1rem;
      }
      .formulario__principal{
          width: 100%;
@@ -140,16 +142,19 @@
          width: 100%;
          height: 5rem;
          background-color: red;
-         position: absolute;
-         margin-top:20rem;
+        
+        
+         
      }
      .footer__negro{
          
          width: 100%;
          height: 3rem;
          background-color: black;
-         position: absolute;
-         bottom: 0;
+        
+
+         
+       
      }
      .pokebola__principal{
         
@@ -157,13 +162,29 @@
          height: 100px;
      }
      .img__pokebola{
+       
          background-size: cover;
          width: 115px;
          height: 115px;
-         position: absolute;
-         top:780px;
-         left:190px;
+         position:relative;
+         top:17rem;
+         left:250px;
          z-index: 99999;
+        
      }
+
+
     
  }
+ @media (max-width:389px){
+    .img__pokebola{
+       display: none;
+        background-size: cover;
+        width: 115px;
+        height: 115px;
+        position:relative;
+        top:17rem;
+        left:250px;
+        z-index: 99999;
+ }
+}

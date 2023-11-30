@@ -31,10 +31,10 @@ const HomePage = () => {
         <input ref={inputName} type="text" />
         <button>Catch them all!</button>
     </form>
+    <div className='img__pikachu'><img src="../../pikachu.png" alt="" /></div>
+    <div className='pokebola__primcipal'> <img className='img__pokebola' src="../../Pokebola-pokeball-png-0.png" alt="" /></div>
     <div className='footer__rojo'></div>
     <div className='footer__negro'></div>
-    <div className='pokebola__primcipal'> <img className='img__pokebola' src="../../Pokebola-pokeball-png-0.png" alt="" /></div>
-    <div className='img__pikachu'><img src="../../pikachu.png" alt="" /></div>
    </div>
   )
 }

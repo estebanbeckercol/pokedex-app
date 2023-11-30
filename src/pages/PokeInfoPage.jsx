@@ -3,18 +3,29 @@ import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import '../components/styles/paginacion.css'
 import App from '../App'
+import Pagination from '../components/TablePagination/PokemonList'
+
+
 
 
 
 
 const PokeInfoPage = () => {
 
+  
+  const handlePageChange = (newPage) => {
+    console.log('New page:', newPage);}
+    
+    
   const {id} = useParams()
-
+  
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`
-
+  
   const [ pokemon, getPokemon ] = useFetch(url)
 
+  const currentPage = 1;
+  const totalPages = pokemon;
+  
   useEffect(() => {
     getPokemon()
   },[])
@@ -29,7 +40,13 @@ const PokeInfoPage = () => {
        <div className='img__principal--paginacion'>
         <img src="../../image 11.png" alt="" />
 
-       
+      
+        <div>
+     
+      <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
+    </div>
+ 
+
     </div>
       <div className='card__paginacion'>
       <img className='img__pokemon' src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />
@@ -81,13 +98,13 @@ const PokeInfoPage = () => {
      
       
     
-        <h3>stats</h3>
+        <h3 className='name__stats'>stats</h3>
         <ul className='stats__pokemon'>
         {
           pokemon?.stats.map(pokemon => (
-            <li key={pokemon.stat.url}>
-            <span>{pokemon.stat.name}</span><span>: </span>
-            <span>{pokemon.base_stat}</span>
+            <li className='stats' key={pokemon.stat.url}>
+            <span className='stats__nombre'>{pokemon.stat.name}</span>
+            <span className='base__stats'>{pokemon.base_stat}</span>
         </li>
         ))
       }
@@ -97,17 +114,21 @@ const PokeInfoPage = () => {
       
        
 
-      <h3>Game indices</h3>
-      <ul className='indices__pokemon'>
-        <li>{pokemon?.game_indices[0].game_index}</li>
+      <h3 className='name__indices'>Game indices</h3>
+      <ul>
+      
         {
           pokemon?.game_indices.slice(1).map(pokemon => (
-            <li key={pokemon.version.name}>{pokemon.version.name}: {pokemon.game_index}
+            <li   className='indices__pokemon' key={pokemon.version.name}>
+             <span className='name__name'> {pokemon.version.name}</span>
+             <span> {pokemon.game_index}</span>
           </li>
           ))
         }
       </ul>
       </div>
+
+     
     
      
 
