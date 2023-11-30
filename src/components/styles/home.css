@@ -1,7 +1,5 @@
 .container__principal{
     width: 100%;
-    max-height: fit-content;
-    max-height: -moz-fit-content;
     height: 100%;
     background-color: aliceblue;
     margin: 0;
