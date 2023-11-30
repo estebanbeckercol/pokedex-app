@@ -1,9 +1,9 @@
-import React, { useEffect} from 'react'
+import React, { useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import '../components/styles/paginacion.css'
 import App from '../App'
-import Pagination from '../components/TablePagination/PokemonList'
+
 
 
 
@@ -13,19 +13,15 @@ import Pagination from '../components/TablePagination/PokemonList'
 const PokeInfoPage = () => {
 
   
-  const handlePageChange = (newPage) => {
-    console.log('New page:', newPage);}
-    
-    
+  
+ 
+
   const {id} = useParams()
-  
+
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`
-  
+
   const [ pokemon, getPokemon ] = useFetch(url)
 
-  const currentPage = 1;
-  const totalPages = pokemon;
-  
   useEffect(() => {
     getPokemon()
   },[])
@@ -40,11 +36,10 @@ const PokeInfoPage = () => {
        <div className='img__principal--paginacion'>
         <img src="../../image 11.png" alt="" />
 
+        
       
-        <div>
+
      
-      <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
-    </div>
  
 
     </div>

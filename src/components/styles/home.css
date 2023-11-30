@@ -88,7 +88,7 @@
      top:200px;
      left:50px;
  }
- @media (max-width:1200px){
+ @media (max-width:800px){
  
      .container__principal{
          width: 100%;
